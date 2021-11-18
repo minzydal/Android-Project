@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity = "center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+android:orientation = "horizontal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+<ImageView
+    android:layout_width="160dp"
+    android:layout_height="199dp"
+    android:layout_gravity="fill_horizontal"
+    android:layout_weight="0"
+    android:src="@drawable/크롱" />
+
+<LinearLayout
+    android:orientation = "vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:text="MINZY KIM"
+        android:textColor="#3C3737"
+        android:textSize="10pt"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="286dp"
+        android:layout_height="50dp"
+        android:text="010-3444-9592"
+        android:textColor="#3C3737"
+        android:textSize="10pt"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:text="Minzydal@gmail.com"
+        android:textColor="#3C3737"
+        android:textSize="10pt"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="530dp"
+        android:layout_height="48dp"
+        android:text="Koreatech, Computer Science and Engineering"
+        android:textColor="#3C3737"
+        android:textSize="10pt"
+        android:textStyle="italic"
+        android:typeface="serif" />
+</LinearLayout>
+</LinearLayout>
+
+
+
+    </LinearLayout>

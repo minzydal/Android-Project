@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize= "28sp"
+        android:inputType="number"
+        android:id="@+id/num1"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize= "28sp"
+        android:inputType="number"
+        android:id="@+id/num2"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize= "28sp"
+        android:text="+"
+        android:onClick="onClick"
+        android:id="@+id/add"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize= "28sp"
+        android:text="-"
+        android:onClick="onClick"
+        android:id="@+id/sub"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize= "28sp"
+        android:text="*"
+        android:onClick="onClick"
+        android:id="@+id/mul"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize= "28sp"
+        android:text="/"
+        android:onClick="onClick"
+        android:id="@+id/div"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Result : "
+        android:textColor="#3A3737"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="..."
+        android:textColor="#3A3737"
+        android:textSize="30dp"
+        android:id="@+id/result"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_margin="10dp"
+        android:text="clear"
+        android:onClick="onClick"
+        android:id="@+id/clear"/>
+
+</LinearLayout>

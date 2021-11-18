@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+
+        android:layout_marginTop = "20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        android:textSize="15sp"
+        android:layout_marginBottom="100dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="출발지"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id = "@+id/dep"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Point of Departure"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_marginTop = "20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "도착지"
+        android:textSize = "15sp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <EditText
+        android:id = "@+id/des"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Destination"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/revise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="onClick"
+        android:text="수정완료" />
+
+</LinearLayout>

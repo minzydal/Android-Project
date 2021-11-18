@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Korea -> USA"
+        android:textSize="30sp"
+        android:layout_marginBottom = "20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 좌석등급"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+    <RadioButton
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:onClick="onClick"
+        android:text="First"
+        android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:onClick="onClick"
+            android:text="Business"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/economy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:onClick="onClick"
+            android:text="Economy"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="기내식" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="35dp">
+
+        <CheckBox
+            android:id="@+id/korean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:onClick="onClick"
+            android:text="Korean"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/western"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:onClick="onClick"
+            android:text="Western"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:onClick="onClick"
+            android:text="Chinese"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="좌석위치" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aisle seat"
+            android:textSize="18sp"
+            android:onClick="onClick"
+            android:id="@+id/aisle"
+            android:layout_marginRight="15dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Window seat"
+            android:textSize="18sp"
+            android:onClick="onClick"
+            android:id="@+id/window"
+            android:layout_marginRight="15dp"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="Number of people"
+            android:layout_marginRight="15dp"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/nop"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="+"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/Sub"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="-"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Total"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="287dp"
+        android:layout_height="201dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+</LinearLayout>
